@@ -4,12 +4,12 @@
 // @version      0.2
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       jimididit
-// @include        *://*.instagram.com/*
-// @include        *://*.tiktok.com/*
+// @match        *://*.instagram.com/*
+// @match        *://*.tiktok.com/*
 // @grant        none
 // @run-at       document-start
-// @downloadURL https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
-// @updateURL https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
+// @downloadURL  https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
+// @updateURL    https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
 // ==/UserScript==
 
 // Use of an Immediately Invoked Function Expression (IIFE) to avoid polluting the global scope.
