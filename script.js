@@ -33,7 +33,7 @@ window.addEventListener('load', function() {
             ]
         },
         "www.tiktok.com" : {
-            // Key to access Instagram block list in localStorage.
+            // Key to access Tiktok block list in localStorage.
             blockListKey : 'tiktokBlockList',
             profileUrl : (username) => {
                 username = username.startsWith("@") ? username : "@" + username
