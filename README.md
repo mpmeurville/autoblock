@@ -1,5 +1,5 @@
 # Autoblock
-Credits @aquabx et @Fred
+Credits [@aquabx](https://github.com/AquaBx) et @Fred
 
 **Le but : Bloquer automatiquement une grande quantité de comptes Insta et TikTok.**
 
