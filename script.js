@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       jimididit
 // @include        *://*.instagram.com/*
@@ -195,7 +195,7 @@ window.addEventListener('load', function() {
         btn.style.width = '32px';
         btn.style.height = '32px';
         btn.style.position = "absolute"
-        btn.style.top = '20px';
+        btn.style.top = '60px';
         btn.style.right = '20px';
         btn.style.backgroundColor = '#fff';
         btn.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
@@ -227,7 +227,7 @@ window.addEventListener('load', function() {
     function createCard(cardTitle) {
         const card = document.createElement('div');
         card.style.position = 'fixed';
-        card.style.top = '60px';
+        card.style.top = '100px';
         card.style.display = 'none';
         card.style.right = '20px';
         card.style.width = '250px';
