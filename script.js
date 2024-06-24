@@ -3,7 +3,7 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.2
 // @description  Collect usernames to block and download them as a .txt file.
-// @author       jimididit
+// @author       gauchedinternet
 // @match        *://*.instagram.com/*
 // @match        *://*.tiktok.com/*
 // @grant        none
