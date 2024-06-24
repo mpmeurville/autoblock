@@ -1,5 +1,10 @@
 # Autoblock
-Credits [@aquabx](https://github.com/AquaBx), @Fred @ PrincesseMP
+
+| Credits |
+|----------|
+| [@aquabx](https://github.com/AquaBx) |
+| [@Fred]() |
+| [@PrincesseMP]() |
 
 **Le but : Bloquer automatiquement une grande quantité de comptes Insta et TikTok.**
 
