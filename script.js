@@ -8,6 +8,8 @@
 // @include        *://*.tiktok.com/*
 // @grant        none
 // @run-at       document-start
+// @downloadURL https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
+// @updateURL https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
 // ==/UserScript==
 
 // Use of an Immediately Invoked Function Expression (IIFE) to avoid polluting the global scope.
