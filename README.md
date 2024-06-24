@@ -1,5 +1,5 @@
 # Autoblock
-Credits [@aquabx](https://github.com/AquaBx) et @Fred
+Credits [@aquabx](https://github.com/AquaBx), @Fred @ PrincesseMP
 
 **Le but : Bloquer automatiquement une grande quantité de comptes Insta et TikTok.**
 
@@ -29,7 +29,7 @@ Sinon, c’est le petit Puzzle en haut à droite du navigateur : ![](https://g
 ![Aspose Words 2b1c4dad-2452-40e3-abde-a8e14b906b0a 005](https://github.com/gauchedinternet/autoblock/assets/35542432/a59afb0a-27ec-42a1-856a-9444ab7396c4)
 
 1. **Ajouter le script :**
-   1. Remplacez le contenu du nouveau script par le code fourni (Copier-coller depuis le fichier texte ***script\_autoblock.txt*** attaché). Prenez bien toutes les lignes du script, et remplacez tout ce qui est dans Tampermonkey.
+   1. Remplacez le contenu du nouveau script par le code fourni (Copier-coller depuis le fichier texte ***script\_autoblock.txt*** attaché ou  dashboard / Tableau de bord > input file). Prenez bien toutes les lignes du script, et remplacez tout ce qui est dans Tampermonkey.
 
 
 1. **Enregistrer le script :**
