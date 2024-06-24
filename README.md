@@ -4,7 +4,9 @@
 |----------|
 | [@aquabx](https://github.com/AquaBx) |
 | [@Fred]() |
-| [@PrincesseMP]() |
+| [@PrincesseMP](https://github.com/mpmeurville) |
+| [@Dysta](https://github.com/Dysta) |
+ 
 
 **Le but : Bloquer automatiquement une grande quantité de comptes Insta et TikTok.**
 
