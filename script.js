@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.3
+// @version      0.4
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       gauchedinternet
 // @match        *://*.instagram.com/*
@@ -95,6 +95,7 @@ window.addEventListener('load', function() {
         }
 
         let store = []
+        let blocked = true
 
         for (let action of configs[host].actions_list){
 
@@ -103,6 +104,7 @@ window.addEventListener('load', function() {
             try {
                 target = await waitForElement(action.target, action.timeout)
             } catch (error) {
+                blocked = false
                 break
             }
 
@@ -119,6 +121,10 @@ window.addEventListener('load', function() {
 
             await sleep(action.sleep)
         }
+
+        let counter = blocked ? 'countBlock' : 'countError'
+        localStorage.setItem(counter, parseInt(localStorage.getItem(counter))+1)
+
 
         // Move on to the next user in the queue.
         handleNextUser();
@@ -189,12 +195,24 @@ window.addEventListener('load', function() {
 
         addButton(card, 'Start', () => {
             if (localStorage.getItem("autoBlockQueue") != []){
+                localStorage.setItem('countBlock', "0")
+                localStorage.setItem('countError', "0")
+
                 handleNextUser();
             }
         });
         addButton(card, 'Stop', () => {
             localStorage.setItem("autoBlockQueue", [])
         });
+
+        addText(card, `Blocked : ${parseInt(localStorage.getItem("countBlock"))|0}`);
+        addText(card, `Not Blocked : ${parseInt(localStorage.getItem("countError"))|0}`);
+
+        let queue = JSON.parse(localStorage.getItem("autoBlockQueue"))
+        let len_queue = queue == null ? 0 : queue.length
+
+        addText(card, `Remaining : ${len_queue}`);
+
         createFileInput(card);
 
         createHideButton(card);
@@ -214,7 +232,11 @@ window.addEventListener('load', function() {
         btn.style.boxShadow = '0 4px 8px rgba(0,0,0,0.1)';
         btn.style.borderRadius = '8px';
         btn.style.zIndex = '1000000';
-        btn.onclick = () => {card.style.display = card.style.display == "block" ? "none" : "block" };
+        btn.onclick = () => {
+            let val = localStorage.getItem('cardDisplay') == "none" ? "block" : "none"
+            localStorage.setItem('cardDisplay', val)
+            card.style.display = val
+        }
         document.body.appendChild(btn);
     }
 
@@ -238,10 +260,14 @@ window.addEventListener('load', function() {
 
     // Create the main UI card that hosts all UI elements.
     function createCard(cardTitle) {
+        if ( localStorage.getItem('cardDisplay') == null) {
+            localStorage.setItem('cardDisplay', "none")
+        }
+
         const card = document.createElement('div');
         card.style.position = 'fixed';
         card.style.top = '100px';
-        card.style.display = 'none';
+        card.style.display = localStorage.getItem('cardDisplay');
         card.style.right = '20px';
         card.style.width = '250px';
         card.style.backgroundColor = '#fff';
@@ -274,6 +300,16 @@ window.addEventListener('load', function() {
         button.style.borderRadius = '5px';
         button.style.cursor = 'pointer';
         button.onclick = onClick;
+        card.appendChild(button);
+    }
+
+    function addText(card, text) {
+        const button = document.createElement('p');
+        button.textContent = text;
+        button.style.color = 'black';
+        button.style.padding = '10px';
+        button.style.margin = '0px';
+        button.style.width = '100%';
         card.appendChild(button);
     }
 
