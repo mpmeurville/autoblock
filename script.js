@@ -192,6 +192,8 @@ window.addEventListener('load', function() {
 
 
         const card = createCard('Block List Manager');
+        
+        createFileInput(card);
 
         addButton(card, 'Start', () => {
             if (localStorage.getItem("autoBlockQueue") != []){
@@ -213,7 +215,6 @@ window.addEventListener('load', function() {
 
         addText(card, `Remaining : ${len_queue}`);
 
-        createFileInput(card);
 
         createHideButton(card);
 
