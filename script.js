@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.5
+// @version      0.7
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       gauchedinternet
 // @match        *://*.instagram.com/*
@@ -29,12 +29,12 @@ window.addEventListener('load', function() {
             actions_list : [
                 {info : "Searching for option button", target : '[role="button"]:has([aria-label="Options"])', action : "click", timeout: 5000, sleep:1000},
                 {info : "Searching for follow button", target : 'button:nth-child(1)', action : "store", timeout: 5000, sleep:1000},
-                {info : "Searching for block button", target : '[role="dialog"] button:nth-child(1)', action : "click", check : (self,stored) => {return self.innerText != stored.at(-1)} , timeout: 5000, sleep:1000},
+                {info : "Searching for block button", target : '[role="dialog"] button:nth-child(1)', action : "click", check : (self,stored) => {return self.innerText !== stored.at(-1)} , timeout: 5000, sleep:1000},
                 {info : "Searching for block confirmation button", target : '[role="dialog"] button:nth-child(1):nth-last-of-type(2)', action : "click", timeout: 5000, sleep:1000},
             ]
         },
         "www.tiktok.com" : {
-            // Key to access Tiktok block list in localStorage.
+            // Key to access TikTok block list in localStorage.
             blockListKey : 'tiktokBlockList',
             profileUrl : (username) => {
                 username = username.startsWith("@") ? username : "@" + username
@@ -43,7 +43,7 @@ window.addEventListener('load', function() {
             actions_list : [
                 {info : "Searching for option button", target : '[data-e2e="user-more"]', action : "mouseover", timeout: 5000, sleep:1000},
                 {info : "Searching for follow button", target : '[data-e2e="follow-button"]', action : "store", timeout: 5000, sleep:1000},
-                {info : "Searching for block button", target : '[data-e2e="user-report"] [role="button"]:nth-last-of-type(1)', action : "click", check : (self,stored) => {return self.innerText != stored.at(-1)}, timeout: 5000, sleep:1000},
+                {info : "Searching for block button", target : '[data-e2e="user-report"] [role="button"]:nth-last-of-type(1)', action : "click", check : (self,stored) => {return self.innerText !== stored.at(-1)}, timeout: 5000, sleep:1000},
                 {info : "Searching for block confirmation button", target : 'button[data-e2e="block-popup-block-btn"]', action : "click", timeout: 5000, sleep:1000},
             ]
         },
@@ -55,7 +55,7 @@ window.addEventListener('load', function() {
             actions_list : [
                 {info : "Searching for option button", target : '[data-testid="userActions"]', action : "click", timeout: 5000, sleep:1000},
                 {info : "Searching for follow button", target : '[data-testid="placementTracking"]', action : "store", timeout: 5000, sleep:1000},
-                {info : "Searching for block button", target : '[data-testid="block"]', action : "click", check : (self,stored) => {return self.innerText != stored.at(-1)} , timeout: 5000, sleep:1000},
+                {info : "Searching for block button", target : '[data-testid="block"]', action : "click", check : (self,stored) => {return self.innerText !== stored.at(-1)} , timeout: 5000, sleep:1000},
                 {info : "Searching for block confirmation button", target : '[data-testid="confirmationSheetConfirm"]', action : "click", timeout: 5000, sleep:1000},
             ]
         },
@@ -69,9 +69,9 @@ window.addEventListener('load', function() {
      * This typically involves continuing a blocking process that was interrupted by a page load.
      */
     function checkForPostNavigationTask() {
-        const task = JSON.parse(localStorage.getItem('autoBlock')||"[]");
-        if (task) {
-            performBlockOperation(task);
+        const task = JSON.parse(localStorage.getItem('autoBlock') || "{}");
+        if (task.username) {
+            performBlockOperation(task).then(() => {});
         }
     }
 
@@ -112,7 +112,7 @@ window.addEventListener('load', function() {
 
             if (action.check && !action.check(target,store)) break
 
-            if (action.action == "store") {
+            if (action.action === "store") {
                 store.push(target.textContent)
             }
             else {
@@ -123,11 +123,8 @@ window.addEventListener('load', function() {
         }
 
         let counter = blocked ? 'countBlock' : 'countError'
-        localStorage.setItem(counter, (parseInt(localStorage.getItem(counter)||"0")+1).toString())
-
-
-        // Move on to the next user in the queue.
-        handleNextUser();
+        localStorage.setItem(counter, (parseInt(localStorage.getItem(counter) || "0") + 1).toString())
+        handleNextUser()
     }
 
      /**
@@ -135,8 +132,10 @@ window.addEventListener('load', function() {
      */
     function handleNextUser() {
         const users = JSON.parse(localStorage.getItem('autoBlockQueue') || '[]');
+        console.trace(JSON.stringify(users))
         if (users.length > 0) {
             const nextUser = users.shift();
+            console.trace(JSON.stringify(users))
             localStorage.setItem('autoBlockQueue', JSON.stringify(users));
             localStorage.setItem('autoBlock', JSON.stringify(nextUser));
             checkForPostNavigationTask();
@@ -144,9 +143,10 @@ window.addEventListener('load', function() {
             alert('All users have been blocked');
             localStorage.removeItem('autoBlockQueue');
             localStorage.removeItem('autoBlock');
-            window.location.href = window.location.host
+            window.location.href = `https://${window.location.host}`
         }
     }
+
 
     /**
      * Waits for a DOM element to appear within a specified timeout.
@@ -164,7 +164,7 @@ window.addEventListener('load', function() {
                 }
             });
 
-            observer.observe(document.body, { childList: true, subtree: true });
+            observer.observe(document.body, {childList: true, subtree: true});
 
             setTimeout(() => {
                 observer.disconnect();
@@ -198,28 +198,23 @@ window.addEventListener('load', function() {
         createFileInput(card);
 
         addButton(card, 'Start', () => {
-            if (localStorage.getItem("autoBlockQueue") != "[]"){
-                localStorage.setItem('countBlock', "0")
-                localStorage.setItem('countError', "0")
-
-                handleNextUser();
-            }
+            localStorage.setItem('countBlock', "0")
+            localStorage.setItem('countError', "0")
+            handleNextUser();
         });
         addButton(card, 'Stop', () => {
             localStorage.setItem("autoBlockQueue", "[]")
         });
 
-        addText(card, `Blocked : ${parseInt(localStorage.getItem("countBlock")||"0")}`);
-        addText(card, `Not Blocked : ${parseInt(localStorage.getItem("countError")||"0")}`);
+        addText(card, `Blocked : ${parseInt(localStorage.getItem("countBlock") || "0")}`);
+        addText(card, `Not Blocked : ${parseInt(localStorage.getItem("countError") || "0")}`);
 
-        let queue = JSON.parse(localStorage.getItem("autoBlockQueue")||"[]")
+        let queue = JSON.parse(localStorage.getItem("autoBlockQueue") || "[]")
         let len_queue = queue == null ? 0 : queue.length
 
         addText(card, `Remaining : ${len_queue}`);
 
-
         createHideButton(card);
-
     }
 
     // Create a file input for handling block list uploads.
@@ -236,7 +231,7 @@ window.addEventListener('load', function() {
         btn.style.borderRadius = '8px';
         btn.style.zIndex = '1000000';
         btn.onclick = () => {
-            let val = localStorage.getItem('cardDisplay') == "none" ? "block" : "none"
+            let val = localStorage.getItem('cardDisplay') === "none" ? "block" : "none"
             localStorage.setItem('cardDisplay', val)
             card.style.display = val
         }
@@ -270,7 +265,7 @@ window.addEventListener('load', function() {
         const card = document.createElement('div');
         card.style.position = 'fixed';
         card.style.top = '100px';
-        card.style.display = localStorage.getItem('cardDisplay')||"none";
+        card.style.display = localStorage.getItem('cardDisplay') || "none";
         card.style.right = '20px';
         card.style.width = '250px';
         card.style.backgroundColor = '#fff';
