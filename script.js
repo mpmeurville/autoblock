@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.8
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       gauchedinternet
 // @match        *://*.instagram.com/*
@@ -105,6 +105,7 @@ window.addEventListener('load', function() {
                 target = await waitForElement(action.target, action.timeout)
             } catch (error) {
                 blocked = false
+                console.trace(error)
                 break
             }
 
@@ -132,10 +133,8 @@ window.addEventListener('load', function() {
      */
     function handleNextUser() {
         const users = JSON.parse(localStorage.getItem('autoBlockQueue') || '[]');
-        console.trace(JSON.stringify(users))
         if (users.length > 0) {
             const nextUser = users.shift();
-            console.trace(JSON.stringify(users))
             localStorage.setItem('autoBlockQueue', JSON.stringify(users));
             localStorage.setItem('autoBlock', JSON.stringify(nextUser));
             checkForPostNavigationTask();
@@ -147,7 +146,6 @@ window.addEventListener('load', function() {
         }
     }
 
-
     /**
      * Waits for a DOM element to appear within a specified timeout.
      * @param {String} selector - The CSS selector of the element.
@@ -156,20 +154,19 @@ window.addEventListener('load', function() {
      */
     function waitForElement(selector, timeout) {
         return new Promise((resolve, reject) => {
-            const observer = new MutationObserver((mutationsList, observer) => {
-                const element = document.querySelector(selector);
-                if (element) {
-                    observer.disconnect();
-                    resolve(element);
+            const intervalTime = 100;
+            const endTime = Number(new Date()) + timeout;
+            const timer = setInterval(() => {
+                if (Number(new Date()) > endTime) {
+                    clearInterval(timer);
+                    reject(new Error("Element not found within time: " + selector));
                 }
-            });
-
-            observer.observe(document.body, {childList: true, subtree: true});
-
-            setTimeout(() => {
-                observer.disconnect();
-                reject(new Error("Element not found within time: " + selector));
-            }, timeout);
+                const el = document.querySelector(selector);
+                if (el) {
+                    clearInterval(timer);
+                    resolve(el);
+                }
+            }, intervalTime);
         });
     }
 
@@ -194,7 +191,7 @@ window.addEventListener('load', function() {
 
 
         const card = createCard('Block List Manager');
-        
+
         createFileInput(card);
 
         addButton(card, 'Start', () => {
