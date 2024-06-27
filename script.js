@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.4
+// @version      0.5
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       gauchedinternet
 // @match        *://*.instagram.com/*
@@ -69,7 +69,7 @@ window.addEventListener('load', function() {
      * This typically involves continuing a blocking process that was interrupted by a page load.
      */
     function checkForPostNavigationTask() {
-        const task = JSON.parse(localStorage.getItem('autoBlock'));
+        const task = JSON.parse(localStorage.getItem('autoBlock')||"[]");
         if (task) {
             performBlockOperation(task);
         }
@@ -113,7 +113,7 @@ window.addEventListener('load', function() {
             if (action.check && !action.check(target,store)) break
 
             if (action.action == "store") {
-                store.push(target.innerText)
+                store.push(target.textContent)
             }
             else {
                 simulateMouseEvent(target, action.action);
@@ -123,7 +123,7 @@ window.addEventListener('load', function() {
         }
 
         let counter = blocked ? 'countBlock' : 'countError'
-        localStorage.setItem(counter, parseInt(localStorage.getItem(counter))+1)
+        localStorage.setItem(counter, (parseInt(localStorage.getItem(counter)||"0")+1).toString())
 
 
         // Move on to the next user in the queue.
@@ -144,6 +144,7 @@ window.addEventListener('load', function() {
             alert('All users have been blocked');
             localStorage.removeItem('autoBlockQueue');
             localStorage.removeItem('autoBlock');
+            window.location.href = window.location.host
         }
     }
 
@@ -155,19 +156,20 @@ window.addEventListener('load', function() {
      */
     function waitForElement(selector, timeout) {
         return new Promise((resolve, reject) => {
-            const intervalTime = 100;
-            const endTime = Number(new Date()) + timeout;
-            const timer = setInterval(() => {
-                if (Number(new Date()) > endTime) {
-                    clearInterval(timer);
-                    reject(new Error("Element not found within time: " + selector));
+            const observer = new MutationObserver((mutationsList, observer) => {
+                const element = document.querySelector(selector);
+                if (element) {
+                    observer.disconnect();
+                    resolve(element);
                 }
-                const el = document.querySelector(selector);
-                if (el) {
-                    clearInterval(timer);
-                    resolve(el);
-                }
-            }, intervalTime);
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
+
+            setTimeout(() => {
+                observer.disconnect();
+                reject(new Error("Element not found within time: " + selector));
+            }, timeout);
         });
     }
 
@@ -196,7 +198,7 @@ window.addEventListener('load', function() {
         createFileInput(card);
 
         addButton(card, 'Start', () => {
-            if (localStorage.getItem("autoBlockQueue") != []){
+            if (localStorage.getItem("autoBlockQueue") != "[]"){
                 localStorage.setItem('countBlock', "0")
                 localStorage.setItem('countError', "0")
 
@@ -204,13 +206,13 @@ window.addEventListener('load', function() {
             }
         });
         addButton(card, 'Stop', () => {
-            localStorage.setItem("autoBlockQueue", [])
+            localStorage.setItem("autoBlockQueue", "[]")
         });
 
-        addText(card, `Blocked : ${parseInt(localStorage.getItem("countBlock"))|0}`);
-        addText(card, `Not Blocked : ${parseInt(localStorage.getItem("countError"))|0}`);
+        addText(card, `Blocked : ${parseInt(localStorage.getItem("countBlock")||"0")}`);
+        addText(card, `Not Blocked : ${parseInt(localStorage.getItem("countError")||"0")}`);
 
-        let queue = JSON.parse(localStorage.getItem("autoBlockQueue"))
+        let queue = JSON.parse(localStorage.getItem("autoBlockQueue")||"[]")
         let len_queue = queue == null ? 0 : queue.length
 
         addText(card, `Remaining : ${len_queue}`);
@@ -268,7 +270,7 @@ window.addEventListener('load', function() {
         const card = document.createElement('div');
         card.style.position = 'fixed';
         card.style.top = '100px';
-        card.style.display = localStorage.getItem('cardDisplay');
+        card.style.display = localStorage.getItem('cardDisplay')||"none";
         card.style.right = '20px';
         card.style.width = '250px';
         card.style.backgroundColor = '#fff';
