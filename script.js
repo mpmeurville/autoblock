@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.8
+// @version      0.9
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       gauchedinternet
 // @match        *://*.instagram.com/*
@@ -53,9 +53,10 @@ window.addEventListener('load', function() {
             blockListKey : 'xBlockList',
             profileUrl : (username) => {return `https://x.com/${username}`},
             actions_list : [
+                {info : "Searching for follow button", target : '[data-testid="placementTracking"] button', action : "mouseover", timeout: 5000, sleep:1000},
+                {info : "Storing follow button", target : '[data-testid="placementTracking"]', action : "store", timeout: 5000, sleep:1000},
                 {info : "Searching for option button", target : '[data-testid="userActions"]', action : "click", timeout: 5000, sleep:1000},
-                {info : "Searching for follow button", target : '[data-testid="placementTracking"]', action : "store", timeout: 5000, sleep:1000},
-                {info : "Searching for block button", target : '[data-testid="block"]', action : "click", check : (self,stored) => {return self.innerText !== stored.at(-1)} , timeout: 5000, sleep:1000},
+                {info : "Searching for block button", target : '[data-testid="block"]', action : "click", check : (self,stored) => {return !self.innerText.includes(stored.at(-1)) } , timeout: 5000, sleep:1000},
                 {info : "Searching for block confirmation button", target : '[data-testid="confirmationSheetConfirm"]', action : "click", timeout: 5000, sleep:1000},
             ]
         },
