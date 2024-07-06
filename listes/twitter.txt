@@ -292,6 +292,7 @@ Lau1Logo
 LaureLavalette
 LaurentObertone
 LauronNicolas
+LAVB_off
 LaVoixQuiBlesse
 LCI
 Le_Figaro
@@ -430,6 +431,7 @@ SarahSaldmann
 sdblepas
 sebchenu
 Sennic76
+serge_rt
 sidonichat
 Simesss67
 sistadunet
