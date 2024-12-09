@@ -1,12 +1,13 @@
 // ==UserScript==
 // @name         social-autoblocker
 // @namespace    http://tampermonkey.net/
-// @version      0.9
+// @version      0.10
 // @description  Collect usernames to block and download them as a .txt file.
 // @author       gauchedinternet
 // @match        *://*.instagram.com/*
 // @match        *://*.tiktok.com/*
 // @match        *://*.x.com/*
+// @match        *://*.bsky.app/*
 // @grant        none
 // @run-at       document-start
 // @downloadURL  https://raw.githubusercontent.com/gauchedinternet/autoblock/main/script.js
@@ -60,6 +61,19 @@ window.addEventListener('load', function() {
                 {info : "Searching for block confirmation button", target : '[data-testid="confirmationSheetConfirm"]', action : "click", timeout: 5000, sleep:1000},
             ]
         },
+        "bsky.app" : {
+            // Key to access blueskyapp block list in localStorage.
+            blockListKey : 'bskyBlockList',
+            profileUrl : (username) => {
+                return `https://bsky.app/profile/${username}`
+            },
+            actions_list : [
+                {info : "Searching for follow button", target : '[role="button"][data-testid="followBtn"]', action : "store", timeout: 5000, sleep:1000},
+                {info : "Searching for option button", target : '[role="button"][data-testid="profileHeaderDropdownBtn"]', action : "click", timeout: 5000, sleep:1000},
+                {info : "Searching for block button", target : '[role="menuitem"][data-testid="profileHeaderDropdownBlockBtn"]', action : "click", check : (self,stored) => {return self.innerText !== stored.at(-1)}, timeout: 5000, sleep:1000},
+                {info : "Searching for block confirmation button", target : '[role="button"][data-testid="confirmBtn"]', action : "click", timeout: 5000, sleep:1000},
+            ]
+        }
     }
 
     // Initialize the script by checking if there's a post-navigation task to be performed.
