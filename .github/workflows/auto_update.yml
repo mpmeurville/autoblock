@@ -1,0 +1,37 @@
+name: listes_auto_update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *" # every 6 hours
+
+env:
+  GH_TOKEN: ${{ github.token }}
+
+permissions:
+  contents: write
+
+jobs:
+  bsky_update:
+    name: Update BlueSky List
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Git configuration
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+
+      - name: Run bsky update script
+        run: bash update_bsky_list.sh ./listes/bsky.txt at://did:plc:zfvxtjekvr44xwbhqzb5fbwt/app.bsky.graph.list/3lb5vzcc6272m
+
+      - name: Push changes
+        run: |
+          if git diff --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -a -m "Auto update for BlueSky"
+            git push
+          fi
