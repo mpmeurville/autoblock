@@ -1,3 +1,4 @@
+hazmieh.bsky.social
 sagaxx.bsky.social
 laurentallary.bsky.social
 pepelepicard.bsky.social
@@ -136,7 +137,6 @@ yolobathsalts420.bsky.social
 mag30.bsky.social
 twitler.bsky.social
 patriotbillsmith.bsky.social
-deedaydarappa.bsky.social
 gunshymartyr.bsky.social
 jebaitedj.bsky.social
 californiarefugee.bsky.social
@@ -336,7 +336,6 @@ aunmeme.bsky.social
 offensiveancap.bsky.social
 trumpprofit.bsky.social
 nmb917.bsky.social
-ohmygodjustin.bsky.social
 abbythelibb.bsky.social
 thatredlife.bsky.social
 no-sassy-here.bsky.social
@@ -365,7 +364,6 @@ maskedmarvel.bsky.social
 hatzy.bsky.social
 bluesky-temp-2024.bsky.social
 mikey-one.bsky.social
-idrinkleftisttears.bsky.social
 scooturd.bsky.social
 txnx.bsky.social
 giowashisnameoh.bsky.social
@@ -398,7 +396,6 @@ exploringalway.bsky.social
 dookusroyal.bsky.social
 patriotsbearded.bsky.social
 trhlofficial.bsky.social
-txfw.bsky.social
 sigmamalefumo.bsky.social
 usafirst1st.bsky.social
 he-won.bsky.social
@@ -479,6 +476,7 @@ swansurf.bsky.social
 sherripollick.bsky.social
 thunderbuttdog.bsky.social
 genx-wisdom.bsky.social
+melvynjh.bsky.social
 stuartshrugged.bsky.social
 wokenomore.bsky.social
 blueswimming.bsky.social
@@ -493,7 +491,6 @@ atopmarshill.bsky.social
 reallouiehuey.bsky.social
 mrsulurearadmiral.bsky.social
 daisy-cutter.bsky.social
-edlophead.bsky.social
 echochamberlibs.bsky.social
 ultramagaf.bsky.social
 legendaryjosesito.bsky.social
@@ -723,7 +720,6 @@ eodhel.bsky.social
 fabiennecestmoi.bsky.social
 nationaliste.bsky.social
 icineil.bsky.social
-me88445.bsky.social
 jsylvain31.bsky.social
 leglaive.bsky.social
 vinzealand.bsky.social
@@ -822,7 +818,6 @@ fouteurdemerde.bsky.social
 vincentl.bsky.social
 lespatriotes75.bsky.social
 djarrel.bsky.social
-freedomwarrior1.bsky.social
 imogen1564.bsky.social
 lazykidgadx.bsky.social
 macca0161.bsky.social
@@ -871,7 +866,6 @@ trumptrain2333.bsky.social
 softwareb.bsky.social
 chieng.bsky.social
 realanonymoose.bsky.social
-tbayattitude.bsky.social
 swaggy-com.bsky.social
 rheablunt.bsky.social
 teamstersvoter.bsky.social
