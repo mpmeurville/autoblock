@@ -1,3 +1,6 @@
+mariebastille.bsky.social
+bp1945.bsky.social
+bb3959.bsky.social
 kolbarte.bsky.social
 poutet.bsky.social
 ubeurre29.bsky.social
@@ -242,7 +245,6 @@ fedsrwatching.bsky.social
 smirkingnick.bsky.social
 loyaltotheparty2.bsky.social
 magaempire.bsky.social
-grizzly-67.bsky.social
 justinbgalloway.bsky.social
 belladonut.bsky.social
 mcarisma.bsky.social
