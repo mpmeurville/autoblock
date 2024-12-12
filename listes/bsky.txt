@@ -427,6 +427,7 @@ only-a-sky-no.bsky.social
 grumpyoldpapaw.bsky.social
 tamalehunter.bsky.social
 alberto-alvarado.bsky.social
+magabarbiedoll.bsky.social
 randallflagg65.bsky.social
 issiech.bsky.social
 trumpwonharrislost.bsky.social
@@ -522,7 +523,6 @@ vigilant71.bsky.social
 pascalelecourt.bsky.social
 thomasradio.bsky.social
 xavierazalbert.bsky.social
-polbom.bsky.social
 vlautard.bsky.social
 freezepessione.bsky.social
 prof-mesovair.bsky.social
