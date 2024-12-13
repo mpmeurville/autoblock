@@ -1,3 +1,4 @@
+jcrousseau.bsky.social
 jfp50.bsky.social
 e-pstein.bsky.social
 mariebastille.bsky.social
@@ -327,7 +328,6 @@ shapedbytruth.bsky.social
 hobbesiantroll.bsky.social
 adjustmentauth.bsky.social
 gratefulsteve4.bsky.social
-pickleballlover.bsky.social
 bluescry.bsky.social
 thatamerican.bsky.social
 nakdnick.bsky.social
@@ -411,7 +411,6 @@ sparklepuff1.bsky.social
 deportthemall.bsky.social
 maga-45-47.bsky.social
 dmccray.bsky.social
-mattykinsx.bsky.social
 natejon.bsky.social
 asher312.bsky.social
 thebigchud.bsky.social
@@ -432,7 +431,6 @@ only-a-sky-no.bsky.social
 grumpyoldpapaw.bsky.social
 tamalehunter.bsky.social
 alberto-alvarado.bsky.social
-magabarbiedoll.bsky.social
 randallflagg65.bsky.social
 issiech.bsky.social
 trumpwonharrislost.bsky.social
@@ -472,7 +470,6 @@ teddyp1776.bsky.social
 jessicae1120.bsky.social
 fredziffel228.bsky.social
 captcojones.bsky.social
-saucybill.bsky.social
 smargatoo.bsky.social
 joebravo77.bsky.social
 r2401.bsky.social
@@ -493,7 +490,6 @@ donaldjtrumpy.bsky.social
 thunderhead21.bsky.social
 trumpwillfixu.bsky.social
 blaket07.bsky.social
-atopmarshill.bsky.social
 reallouiehuey.bsky.social
 mrsulurearadmiral.bsky.social
 daisy-cutter.bsky.social
@@ -893,7 +889,6 @@ godfather27.bsky.social
 philmc4.bsky.social
 aferrell21.bsky.social
 twitterbest.bsky.social
-kellyannlu17.bsky.social
 lackwild.bsky.social
 liam1411.bsky.social
 beanie13.bsky.social
