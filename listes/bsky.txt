@@ -295,7 +295,6 @@ markmeadows.bsky.social
 abcpodcast.bsky.social
 pendozer.bsky.social
 richardcitizen.bsky.social
-boozearmada.bsky.social
 magadonia1776.bsky.social
 wokeisbroke.bsky.social
 jen30.bsky.social
@@ -404,7 +403,6 @@ dookusroyal.bsky.social
 patriotsbearded.bsky.social
 trhlofficial.bsky.social
 sigmamalefumo.bsky.social
-usafirst1st.bsky.social
 he-won.bsky.social
 republicanfighter.com
 theycallmetrue.bsky.social
@@ -519,7 +517,6 @@ lapsykatraa.bsky.social
 helena-giger.bsky.social
 sporenda.bsky.social
 kleopheme.bsky.social
-vicferbiz.bsky.social
 tomguich.bsky.social
 gauchistophobe.bsky.social
 fgth2.bsky.social
@@ -581,7 +578,6 @@ matthieugariel.bsky.social
 romuwong.bsky.social
 loreine-lad.bsky.social
 elcrackitodunet.bsky.social
-surmulotsnews.bsky.social
 soulripper.bsky.social
 jean-cul-la-gauche.bsky.social
 stanislaslefort.bsky.social
@@ -939,7 +935,6 @@ taylorbrinson.bsky.social
 anarchocommunist2.bsky.social
 paulaineru.bsky.social
 devldog1775.bsky.social
-censorhere.bsky.social
 dexthesex.bsky.social
 bbobynator.bsky.social
 gamotouspoustides.bsky.social
@@ -968,7 +963,6 @@ captaintrekt.bsky.social
 imadam.xyz
 benb46.bsky.social
 cartagena11.bsky.social
-luvamerica.bsky.social
 aps2100.bsky.social
 jhk47.bsky.social
 ereyes26.bsky.social
