@@ -1,3 +1,5 @@
+jfp50.bsky.social
+e-pstein.bsky.social
 mariebastille.bsky.social
 bp1945.bsky.social
 bb3959.bsky.social
@@ -960,7 +962,6 @@ maha1123.bsky.social
 randomowyhandle.bsky.social
 watermeloneater1.bsky.social
 bkirkwood.bsky.social
-nulltest69.bsky.social
 lordvaldomero1.bsky.social
 basedhandle.bsky.social
 captaintrekt.bsky.social
