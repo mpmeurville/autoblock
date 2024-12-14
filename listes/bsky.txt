@@ -1,3 +1,6 @@
+drchampo.bsky.social
+technovolaille.bsky.social
+nato75000.bsky.social
 jcrousseau.bsky.social
 jfp50.bsky.social
 e-pstein.bsky.social
@@ -265,7 +268,7 @@ ownthedems2024.bsky.social
 lilamaega.bsky.social
 brinnenr.bsky.social
 liambagley.bsky.social
-margentinaga.bsky.social
+victoria2027.bsky.social
 trumpwins24.bsky.social
 bodittle.bsky.social
 maga-redwave.bsky.social
@@ -497,7 +500,6 @@ echochamberlibs.bsky.social
 ultramagaf.bsky.social
 legendaryjosesito.bsky.social
 alwaysvictoria.bsky.social
-swiftiesfortrump2.bsky.social
 brodenstarjacob.bsky.social
 loupgarou31.bsky.social
 geotus.bsky.social
