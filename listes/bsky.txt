@@ -1,3 +1,4 @@
+oeil-de-sauron.bsky.social
 drchampo.bsky.social
 technovolaille.bsky.social
 nato75000.bsky.social
@@ -461,7 +462,6 @@ unitedwestand76.bsky.social
 sgueli.bsky.social
 justbob1959.bsky.social
 magat1971.bsky.social
-mikebbb.bsky.social
 blueballs1776.bsky.social
 redwaveatbluesky.bsky.social
 opentoreason.bsky.social
