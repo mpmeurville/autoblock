@@ -1,3 +1,5 @@
+gxvi.bsky.social
+xwitter.bsky.social
 demostene35.bsky.social
 oeil-de-sauron.bsky.social
 drchampo.bsky.social
@@ -98,7 +100,6 @@ ariwiel.bsky.social
 nic-hk.bsky.social
 gbonnaud.bsky.social
 lecanutdu38.bsky.social
-24hn.bsky.social
 clong40.bsky.social
 ifig29.bsky.social
 lilymina35.bsky.social
@@ -218,7 +219,6 @@ catotheelder32.bsky.social
 goddeketal.bsky.social
 realbabylonbee.bsky.social
 markdfabela.bsky.social
-maga-soldier-2.bsky.social
 aggiemaeh.bsky.social
 apwk.bsky.social
 darkangel7215.bsky.social
@@ -477,7 +477,6 @@ thunderbuttdog.bsky.social
 genx-wisdom.bsky.social
 melvynjh.bsky.social
 stuartshrugged.bsky.social
-wokenomore.bsky.social
 blueswimming.bsky.social
 justinbuntingfornc.bsky.social
 gaslightfreezone.bsky.social
@@ -724,7 +723,6 @@ jeaninconnu.bsky.social
 moival.bsky.social
 zeboris.bsky.social
 stephdulux.bsky.social
-commandertorenn.bsky.social
 jbeods.bsky.social
 avnersolal.bsky.social
 cosmorak.bsky.social
