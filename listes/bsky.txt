@@ -1,3 +1,4 @@
+alcapote.bsky.social
 simont32.bsky.social
 gxvi.bsky.social
 xwitter.bsky.social
@@ -430,7 +431,6 @@ bandwidth-beard.bsky.social
 meme-k-ultra.bsky.social
 nmcgillivray.bsky.social
 godefroydebouillon.bsky.social
-4fxakes.bsky.social
 djt2024.bsky.social
 alsotapered.bsky.social
 grawlix12.bsky.social
@@ -481,7 +481,6 @@ trumpwillfixu.bsky.social
 blaket07.bsky.social
 reallouiehuey.bsky.social
 mrsulurearadmiral.bsky.social
-daisy-cutter.bsky.social
 echochamberlibs.bsky.social
 ultramagaf.bsky.social
 legendaryjosesito.bsky.social
