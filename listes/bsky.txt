@@ -1,3 +1,4 @@
+maluchon.bsky.social
 alcapote.bsky.social
 simont32.bsky.social
 gxvi.bsky.social
@@ -124,7 +125,6 @@ udiaq.bsky.social
 automath.bsky.social
 demosthene37.bsky.social
 curiousguy12345.bsky.social
-monarkista.bsky.social
 l3g33k.bsky.social
 jeanculemelenchien.bsky.social
 simbadlemarin.bsky.social
@@ -305,7 +305,6 @@ chaseincommieland.bsky.social
 iansbrodrick.bsky.social
 alexanderejones.bsky.social
 mikecent.bsky.social
-aidsclapton.bsky.social
 bisquitron.bsky.social
 donbsad.bsky.social
 thepigrad.bsky.social
@@ -406,7 +405,6 @@ maga-45-47.bsky.social
 dmccray.bsky.social
 natejon.bsky.social
 asher312.bsky.social
-thebigchud.bsky.social
 dannythetunnelking.bsky.social
 sweethomemich.bsky.social
 thewokeagenda.bsky.social
