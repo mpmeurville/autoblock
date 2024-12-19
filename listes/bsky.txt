@@ -1,3 +1,4 @@
+chlechevalier.bsky.social
 kevinjoly.bsky.social
 rautayrtti.bsky.social
 morgothbauglir.bsky.social
@@ -376,14 +377,12 @@ ninesixthree.bsky.social
 vllc2.bsky.social
 tybernicus17.bsky.social
 outtaluck.bsky.social
-cuxanzimp.bsky.social
 murderbot69.bsky.social
 ultra-maga.bsky.social
 imissmeantweets.bsky.social
 diggoryoblivian.bsky.social
 prolifecoffee.bsky.social
 zooeydotpub.zdu.se
-magap4tri0t.bsky.social
 testingthelimits.bsky.social
 supercommie911.bsky.social
 donkeybutcher.bsky.social
@@ -551,7 +550,7 @@ jhadopi.bsky.social
 nasty00b.bsky.social
 matthieugariel.bsky.social
 romuwong.bsky.social
-loreine-lad.bsky.social
+asiatiqueslad.bsky.social
 elcrackitodunet.bsky.social
 soulripper.bsky.social
 jean-cul-la-gauche.bsky.social
