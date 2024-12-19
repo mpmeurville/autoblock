@@ -1,3 +1,4 @@
+kevinjoly.bsky.social
 rautayrtti.bsky.social
 morgothbauglir.bsky.social
 apassapa.bsky.social
@@ -249,7 +250,6 @@ qultratrashmaga.bsky.social
 trumptardblo.bsky.social
 bobbcomedy.bsky.social
 fedsrwatching.bsky.social
-smirkingnick.bsky.social
 loyaltotheparty2.bsky.social
 magaempire.bsky.social
 justinbgalloway.bsky.social
@@ -375,7 +375,6 @@ thomasitk421.bsky.social
 ninesixthree.bsky.social
 vllc2.bsky.social
 tybernicus17.bsky.social
-danny78.bsky.social
 outtaluck.bsky.social
 cuxanzimp.bsky.social
 murderbot69.bsky.social
@@ -447,7 +446,6 @@ rbcv64.bsky.social
 aleahim.bsky.social
 unitedwestand76.bsky.social
 sgueli.bsky.social
-justbob1959.bsky.social
 magat1971.bsky.social
 blueballs1776.bsky.social
 redwaveatbluesky.bsky.social
