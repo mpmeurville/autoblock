@@ -1,3 +1,4 @@
+franckbaf.bsky.social
 marcomaga.bsky.social
 moussakageante.bsky.social
 chlechevalier.bsky.social
@@ -97,7 +98,6 @@ edouardkhill.bsky.social
 amenis.bsky.social
 lavoixlibre.bsky.social
 oldpoitou.bsky.social
-pascal1996.bsky.social
 felgerwood.bsky.social
 coolporteur.bsky.social
 hadrienjhr.bsky.social
@@ -312,7 +312,6 @@ alexanderejones.bsky.social
 mikecent.bsky.social
 bisquitron.bsky.social
 donbsad.bsky.social
-thepigrad.bsky.social
 garybee.bsky.social
 pamichelle.bsky.social
 spivver13.bsky.social
@@ -390,7 +389,6 @@ supercommie911.bsky.social
 donkeybutcher.bsky.social
 magatrain2024.bsky.social
 maga64.bsky.social
-realandbasedagain.bsky.social
 drcameronjones.bsky.social
 exploringalway.bsky.social
 dookusroyal.bsky.social
