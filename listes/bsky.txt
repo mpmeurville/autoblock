@@ -1,3 +1,4 @@
+frbourdonnais.bsky.social
 franckbaf.bsky.social
 marcomaga.bsky.social
 moussakageante.bsky.social
@@ -507,7 +508,6 @@ neo2d.bsky.social
 michto973.bsky.social
 puiskonapalechoix.bsky.social
 a-vwzy.bsky.social
-jeanculmelenchon12.bsky.social
 olivier-official.bsky.social
 stempfr.bsky.social
 alp68.bsky.social
