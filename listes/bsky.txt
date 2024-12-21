@@ -461,7 +461,6 @@ maybemaybenoit.bsky.social
 anarchmonarch.bsky.social
 swansurf.bsky.social
 sherripollick.bsky.social
-thunderbuttdog.bsky.social
 genx-wisdom.bsky.social
 melvynjh.bsky.social
 stuartshrugged.bsky.social
