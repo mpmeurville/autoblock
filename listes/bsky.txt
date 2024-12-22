@@ -1,3 +1,4 @@
+francaisdesouche.bsky.social
 lv39000.bsky.social
 frbourdonnais.bsky.social
 franckbaf.bsky.social
@@ -478,6 +479,7 @@ ultramagaf.bsky.social
 legendaryjosesito.bsky.social
 alwaysvictoria.bsky.social
 brodenstarjacob.bsky.social
+blueskymaga.bsky.social
 loupgarou31.bsky.social
 qanon.digibyte.social
 anhuman.bsky.social
