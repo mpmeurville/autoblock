@@ -565,7 +565,6 @@ astrofion.bsky.social
 allaniang7.bsky.social
 jeanneosecours.bsky.social
 jirofred.bsky.social
-thibaultasin.bsky.social
 alainhouaque-barre.bsky.social
 valdakar5.bsky.social
 lechatdroitard.bsky.social
