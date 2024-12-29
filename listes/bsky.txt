@@ -1,3 +1,5 @@
+pierrot03.bsky.social
+maxonaxo.bsky.social
 pipendum.bsky.social
 vivie06.bsky.social
 cyberboulet.bsky.social
@@ -682,7 +684,6 @@ mikacam.bsky.social
 lepaladin.bsky.social
 ezra-33.bsky.social
 mpcofficiel.bsky.social
-trumpist.bsky.social
 mctintin.bsky.social
 kermitgreen.bsky.social
 lolo83.bsky.social
