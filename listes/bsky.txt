@@ -791,7 +791,6 @@ charlotte34mpt.bsky.social
 lebordelais.bsky.social
 fdesouche.bsky.social
 depassageqc.bsky.social
-major-hellstrom.bsky.social
 midmo.bsky.social
 liberty-infos.bsky.social
 oursmaleche.bsky.social
