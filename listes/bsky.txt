@@ -1,3 +1,4 @@
+gregorylamothe.bsky.social
 sergejean.bsky.social
 francis-t-88.bsky.social
 dardjiskien.bsky.social
@@ -557,7 +558,6 @@ sgueli.bsky.social
 magat1971.bsky.social
 blueballs1776.bsky.social
 redwaveatbluesky.bsky.social
-opentoreason.bsky.social
 juicysharts.bsky.social
 redwavefactual.bsky.social
 teddyp1776.bsky.social
