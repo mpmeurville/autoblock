@@ -1,3 +1,4 @@
+patliberty71.bsky.social
 pilou6213.bsky.social
 yvescz.bsky.social
 jpsteinhofer.bsky.social
@@ -232,7 +233,7 @@ edouardkhill.bsky.social
 amenis.bsky.social
 lavoixlibre.bsky.social
 oldpoitou.bsky.social
-handle.invalid
+felgerwood.bsky.social
 coolporteur.bsky.social
 hadrienjhr.bsky.social
 gvpnational.bsky.social
