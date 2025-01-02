@@ -1,3 +1,14 @@
+pilou6213.bsky.social
+yvescz.bsky.social
+jpsteinhofer.bsky.social
+michaelmlafrance.bsky.social
+tubalcain-bzh.bsky.social
+dg54.bsky.social
+gianmarco-lyon.bsky.social
+mfm06340.bsky.social
+fernand666.bsky.social
+patriotefrance.bsky.social
+valeryornitho.bsky.social
 tdjardin.bsky.social
 e2sealop.bsky.social
 gregorylamothe.bsky.social
@@ -221,7 +232,7 @@ edouardkhill.bsky.social
 amenis.bsky.social
 lavoixlibre.bsky.social
 oldpoitou.bsky.social
-felgerwood.bsky.social
+handle.invalid
 coolporteur.bsky.social
 hadrienjhr.bsky.social
 gvpnational.bsky.social
@@ -526,7 +537,7 @@ magamerica2024.bsky.social
 cherylmagaha.bsky.social
 kingtrump47.bsky.social
 ca-ringejeanpierre.bsky.social
-mayomonkeyredux.bsky.social
+handle.invalid
 only-a-sky-no.bsky.social
 grumpyoldpapaw.bsky.social
 tamalehunter.bsky.social
