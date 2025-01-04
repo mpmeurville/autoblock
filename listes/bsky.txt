@@ -1,3 +1,4 @@
+seayou.bsky.social
 emilefranc.bsky.social
 toxicjok.bsky.social
 secondwind.bsky.social
@@ -301,7 +302,6 @@ patriotbillsmith.bsky.social
 jebaitedj.bsky.social
 californiarefugee.bsky.social
 paulszaszsebes.bsky.social
-kommiekarl.bsky.social
 rantoncue.bsky.social
 timber2527.bsky.social
 ibookchick.bsky.social
