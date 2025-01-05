@@ -635,7 +635,6 @@ vlautard.bsky.social
 freezepessione.bsky.social
 prof-mesovair.bsky.social
 neo2d.bsky.social
-michto973.bsky.social
 puiskonapalechoix.bsky.social
 a-vwzy.bsky.social
 olivier-official.bsky.social
@@ -1054,7 +1053,6 @@ x-man7.bsky.social
 sinnej.bsky.social
 dimas12345.bsky.social
 badmoon407.bsky.social
-docpilot1968.bsky.social
 mjwfreedom.bsky.social
 pcbb1212.bsky.social
 rocketxxx.bsky.social
