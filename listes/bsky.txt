@@ -452,7 +452,6 @@ bisquitron.bsky.social
 donbsad.bsky.social
 garybee.bsky.social
 pamichelle.bsky.social
-spivver13.bsky.social
 brianna.bsky.social
 coinhogg.bsky.social
 gello-kennedy.bsky.social
