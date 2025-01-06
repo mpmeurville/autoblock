@@ -1,3 +1,4 @@
+la-nouvelle-france.bsky.social
 laragekimonte.bsky.social
 narcose.bsky.social
 darkywolfy.bsky.social
@@ -521,7 +522,6 @@ diggoryoblivian.bsky.social
 prolifecoffee.bsky.social
 zooeydotpub.zdu.se
 testingthelimits.bsky.social
-supercommie911.bsky.social
 donkeybutcher.bsky.social
 magatrain2024.bsky.social
 maga64.bsky.social
