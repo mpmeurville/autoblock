@@ -1,3 +1,6 @@
+laragekimonte.bsky.social
+narcose.bsky.social
+darkywolfy.bsky.social
 yacmi.bsky.social
 axoulotl08.bsky.social
 rousquille34.bsky.social
@@ -323,7 +326,6 @@ tdsawareness.bsky.social
 conzalv-1.bsky.social
 pacalproute.bsky.social
 homosapiens-marc.bsky.social
-ernerstor.bsky.social
 docmartinus.bsky.social
 parechalpetain.bsky.social
 bruno-runner.bsky.social
