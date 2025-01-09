@@ -7,10 +7,7 @@ andergsj.bsky.social
 oryx1.bsky.social
 tarektoverso.bsky.social
 axiome-c.bsky.social
-minalovee.bsky.social
 minadouce.bsky.social
-douceurlovemina.bsky.social
-minaalove.bsky.social
 minabodyfit.bsky.social
 mamanou52.bsky.social
 jmlepen2025.bsky.social
@@ -18,7 +15,6 @@ franck36.bsky.social
 rschneider2.bsky.social
 wkg91bf.bsky.social
 douceurmina.bsky.social
-petitemina.bsky.social
 minaperezfit.bsky.social
 la-nouvelle-france.bsky.social
 laragekimonte.bsky.social
@@ -680,7 +676,6 @@ sanremo9.bsky.social
 p-a-d-20110.bsky.social
 itylus.bsky.social
 philippepoutou.bsky.social
-fredoche64.bsky.social
 langeoliver.bsky.social
 urss4ever.bsky.social
 zaros67.bsky.social
