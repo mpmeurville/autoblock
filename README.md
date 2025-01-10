@@ -51,7 +51,6 @@ Sinon, c’est le petit Puzzle en haut à droite du navigateur : ![](https://g
 
       En haut à droit de l’écran, un carré blanc avec trois petits points. Cliquez dessus ! 
 
-     ![Aspose Words 2b1c4dad-2452-40e3-abde-a8e14b906b0a 009](https://github.com/gauchedinternet/autoblock/assets/35542432/ebb6a898-70d6-4f1d-84dd-4256644b540b)
 
 
    1. Vous devriez voir la boite suivante apparaitre. Si ce n’est pas le cas, vérifiez les étapes 2 et 5 (add-on et script actifs).
